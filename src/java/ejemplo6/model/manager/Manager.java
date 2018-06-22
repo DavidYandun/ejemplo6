@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package proyecto.model.manager;
+package ejemplo6.model.manager;
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
@@ -17,7 +17,7 @@ import ejemplo6.model.entities.Paises;
 @Stateless
 public class Manager {
 
-  @PersistenceContext(unitName = "pruebaDS")
+  @PersistenceContext(unitName = "lenguasDS")
     private EntityManager em;
 
     public void crearPaises(String nombrepais) {
